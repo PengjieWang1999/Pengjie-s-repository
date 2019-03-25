@@ -29,13 +29,13 @@ var weather = '';
 
 app.use(express.static(__dirname + '/public'));
 
-app.use((request, response, next) => {
+/*app.use((request, response, next) => {
 	response.render('maintenance.hbs', {
 		title: 'Maintenance page',
-		/*year: new Date().getFullYear(),*/
+		/*year: new Date().getFullYear(),
 		welcome: 'Hello!'
 	})
-	/*var time = new Date().toString();
+	var time = new Date().toString();
 	//console.log(`${time}: ${request.method} ${request.url}`);
 	var log = `${time}: ${request.method} ${request.url}`;
 	fs.appendFile('server.log', log + '\n', (error) => {
@@ -43,8 +43,8 @@ app.use((request, response, next) => {
 			console.log('Unable to log message');
 		}
 	});
-	next();*/
-});
+	next();
+});*/
 
 app.get('/', (request, response) => {
 	response.render('home.hbs', {

@@ -2,6 +2,7 @@ const express = require('express');
 const request = require('request');
 const hbs = require('hbs');
 const fs = require('fs');
+const port = process.env.PORT || 8080;
 
 var app = express();
 
@@ -80,7 +81,7 @@ hbs.registerHelper('getWeather', () => {
 	return weather;
 });
 
-app.listen(8080, () => {
-	console.log('Server is up on the port 8080');
+app.listen(port, () => {
+	console.log(`Server is up on the port ${port}`);
 	
 });

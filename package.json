@@ -11,8 +11,18 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.16.4",
+    "fs": "0.0.1-security",
     "hbs": "^4.0.3",
     "path": "^0.12.7",
     "request": "^2.88.0"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PengjieWang1999/Pengjie-s-repository.git"
+  },
+  "bugs": {
+    "url": "https://github.com/PengjieWang1999/Pengjie-s-repository/issues"
+  },
+  "homepage": "https://github.com/PengjieWang1999/Pengjie-s-repository#readme"
 }
